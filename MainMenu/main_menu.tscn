@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=3 uid="uid://bek60r2bsphe5"]
+
+[ext_resource type="Theme" uid="uid://buktw8m37i8d5" path="res://MainMenu/Themes/main_menu.tres" id="1_3w4mj"]
+[ext_resource type="PackedScene" path="res://MainMenu/menu_button.tscn" id="2_btn"]
+
+[node name="CenterContainer" type="CenterContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_3w4mj")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/VBoxContainer"]
+layout_mode = 2
+text = "Main Menu"
+horizontal_alignment = 1
+
+[node name="BtnNewGame" parent="PanelContainer/VBoxContainer" instance=ExtResource("2_btn")]
+layout_mode = 2
+text = "New Game"
+
+[node name="BtnContinue" parent="PanelContainer/VBoxContainer" instance=ExtResource("2_btn")]
+layout_mode = 2
+text = "Continue"
+
+[node name="BtnSettings" parent="PanelContainer/VBoxContainer" instance=ExtResource("2_btn")]
+layout_mode = 2
+text = "Settings"
+
+[node name="BtnQuit" parent="PanelContainer/VBoxContainer" instance=ExtResource("2_btn")]
+layout_mode = 2
+text = "Quit"
