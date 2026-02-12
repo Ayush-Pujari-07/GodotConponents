@@ -11,7 +11,7 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "C:\\Users\\AmHawkOrg\\Godot\\Godot_v4.5.1-stable_mono_win64.exe", // Path to Godot executable
+            "program": "C:\\Users\\AmHawkOrg\\Godot\\Godot_v4.6-stable_mono_win64.exe", // Path to Godot executable
             "args": [],
             "cwd": "${workspaceFolder}",
             "stopAtEntry": false,
